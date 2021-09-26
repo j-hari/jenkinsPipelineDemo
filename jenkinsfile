@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('TestJob') {
+            steps {
+                echo 'Hi TestJob'
+            }
+        }
+        stage('DevJob') {
+            steps {
+                echo 'Hi DevJob'
+            }
+        }
+        stage('BuildJob') {
+            steps {
+                echo 'Hi BuildJob'
+            }
+        }
+    }
+}
